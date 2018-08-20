@@ -76,24 +76,6 @@ jobs:
       - store_test_results:
           path: test_results/
 
-  docs:
-    docker:
-      - image: buildpack-deps:artful
-    steps:
-      - checkout
-      - run:
-          name: Install build dependencies
-          command: |
-            apt-get -qq update
-            apt-get -qy install python-sphinx python-pip
-      - run: *setup_prerelease_commit_hash
-      - run:
-          name: Build documentation
-          command: ./scripts/docs.sh
-      - store_artifacts:
-          path: docs/_build/html/
-          destination: docs-html
-
 workflows:
   version: 2
   build_all:
@@ -103,4 +85,3 @@ workflows:
           <<: *build_on_tags
           requires:
             - build_x86_linux
-      - docs: *build_on_tags
