@@ -18,7 +18,7 @@ defaults:
         make -j4
   - run_tests: &run_tests
       name: Tests
-      command: build/soltest --testpath . --run_test=YulRematerialiser/smoke_test
+      command: build/test/soltest --testpath --no-ipc build/test --run_test=YulRematerialiser/smoke_test
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
