@@ -19,7 +19,7 @@ defaults:
   - run_tests: &run_tests
       name: Tests
       command: |
-        build/test/soltest --no-ipc --testpath "build/test" --run_test=YulRematerialiser/smoke_test
+        build/test/soltest -- --no-ipc --testpath "build/test" --run_test=YulRematerialiser/smoke_test
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
