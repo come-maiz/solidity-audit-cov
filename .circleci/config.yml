@@ -20,6 +20,7 @@ defaults:
       name: Tests
       command: |
         build/test/soltest --show-progress --run_test=YulDisambiguator/smoke_test -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulDisambiguator/variables -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
