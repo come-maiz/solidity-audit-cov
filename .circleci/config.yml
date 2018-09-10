@@ -26,6 +26,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulDisambiguator/function_call -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulDisambiguator/for_statement -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulDisambiguator/switch_statement -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulDisambiguator/if_statement -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
