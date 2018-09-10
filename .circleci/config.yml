@@ -21,6 +21,7 @@ defaults:
       command: |
         build/test/soltest --show-progress --run_test=YulDisambiguator -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionHoister/smoke_test -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFunctionHoister/single_fun -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
