@@ -21,11 +21,8 @@ defaults:
       command: |
         build/test/soltest --show-progress --run_test=YulDisambiguator -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionHoister -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionGrouper/smoke_test -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionGrouper/single_fun -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionGrouper/multi_fun_mixed -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionGrouper/nested_fun -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionGrouper/empty_block -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFunctionGrouper -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=WhiskersTest/no_templates -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
