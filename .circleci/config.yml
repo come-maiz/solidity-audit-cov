@@ -31,6 +31,7 @@ defaults:
         build/test/soltest --show-progress --run_test=WhiskersTest/list -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/recursive_list -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/list_can_access_upper -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=WhiskersTest/parameter_collision -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
