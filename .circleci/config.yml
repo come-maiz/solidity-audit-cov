@@ -24,6 +24,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulFunctionGrouper -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/no_templates -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/basic_replacement -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=WhiskersTest/tag_unavailable -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
