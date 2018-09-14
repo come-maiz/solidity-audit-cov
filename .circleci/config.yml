@@ -29,6 +29,7 @@ defaults:
         build/test/soltest --show-progress --run_test=WhiskersTest/non_existing_list -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/empty_list -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest/list -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=WhiskersTest/recursive_list -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
