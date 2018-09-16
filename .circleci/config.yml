@@ -22,16 +22,8 @@ defaults:
         build/test/soltest --show-progress --run_test=YulDisambiguator -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionHoister -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionGrouper -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/no_templates -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/basic_replacement -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/tag_unavailable -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/complicated_replacement -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/non_existing_list -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/empty_list -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/list -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/recursive_list -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/list_can_access_upper -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=WhiskersTest/parameter_collision -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=WhiskersTest -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter/smoke_test -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
