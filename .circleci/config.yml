@@ -25,6 +25,7 @@ defaults:
         build/test/soltest --show-progress --run_test=WhiskersTest -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter/smoke_test -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter/simple -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter/simple_inside_structures -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
