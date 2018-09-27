@@ -30,6 +30,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulRematerialiser/trivial -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulRematerialiser/expression -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulRematerialiser/reassign -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulRematerialiser/non_movable_instr -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
