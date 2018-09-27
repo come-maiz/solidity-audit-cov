@@ -26,6 +26,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionInliner -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFullInliner/simple -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFullInliner/multi_fun -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
