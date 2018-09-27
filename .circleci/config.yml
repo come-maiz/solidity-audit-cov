@@ -24,13 +24,8 @@ defaults:
         build/test/soltest --show-progress --run_test=YulFunctionGrouper -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=WhiskersTest -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulInlinableFunctionFilter -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/simple -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/with_args -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/no_inline_with_mload -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/no_move_with_side_effects -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/complex_with_evm -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/double_calls -- --no-ipc --testpath "build/test"
-        build/test/soltest --show-progress --run_test=YulFunctionInliner/double_recursive_calls -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFunctionInliner -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFullInliner/simple -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
