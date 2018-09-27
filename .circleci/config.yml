@@ -28,6 +28,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulFullInliner/simple -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFullInliner/multi_fun -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFullInliner/move_up_rightwards_arguments -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFullInliner/pop_result -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
