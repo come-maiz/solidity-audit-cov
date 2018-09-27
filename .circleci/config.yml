@@ -30,6 +30,7 @@ defaults:
         build/test/soltest --show-progress --run_test=YulFunctionInliner/no_move_with_side_effects -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionInliner/complex_with_evm -- --no-ipc --testpath "build/test"
         build/test/soltest --show-progress --run_test=YulFunctionInliner/double_calls -- --no-ipc --testpath "build/test"
+        build/test/soltest --show-progress --run_test=YulFunctionInliner/double_recursive_calls -- --no-ipc --testpath "build/test"
   - solc_artifact: &solc_artifact
       path: build/solc/solc
       destination: solc
